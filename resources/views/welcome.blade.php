@@ -6,9 +6,7 @@
 </head>
 
 <body>
-    <livewire:counter />
-
-    @livewireScripts
+    @livewire(App\Livewire\Counter::class)
 </body>
 
 </html>
