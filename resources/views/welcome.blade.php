@@ -7,6 +7,16 @@
 
 <body>
     @livewire(App\Livewire\Counter::class)
+
+    <script>
+        // find all elements with wire:snapshot
+        document.querySelectorAll('[wire\\:snapshot]')
+            .forEach(el => {
+                let snapshot = JSON.parse(el.getAttribute('wire:snapshot'))
+
+                console.log(snapshot);
+            })
+    </script>
 </body>
 
 </html>
