@@ -6,12 +6,9 @@
 </head>
 
 <body>
-    <div class="counter">
-        <span>0</span>
+    <livewire:counter />
 
-        <button>+</button>
-    </div>
-
+    @livewireScripts
 </body>
 
 </html>
